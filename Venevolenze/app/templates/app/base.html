@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html>
+<head>
+    {% load static %}
+    <title>Venevolenze</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <h1><a href="{% url 'app:index' %}">Venevolenze</a></h1>
+        <div class="header-menu">
+            {% if request.user.is_authenticated %}
+                <!-- ここにあとで[お気に入りの文]を追加 -->
+                <a href="{% url 'app:logout' %}">ログアウト</a>
+            {% else %}
+                <a href="{% url 'app:login' %}">ログイン</a>
+                <a href="{% url 'app:signup' %}">新規登録</a>
+            {% endif %}
+        </div>
+    </div>
+</header>
+<div class="container">
+    {% for message in messages %}
+        <p class="message-{{ message.tags }}">{{ message }}</p>
+    {% endfor %}
+    {% block content %} {% endblock %}
+</div>
+</body>
+</html>

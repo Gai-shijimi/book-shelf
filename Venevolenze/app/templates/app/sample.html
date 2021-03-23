@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>サンプル</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/sample.css'%}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="column left-bar">
+            <div class="left-category-container">
+                <ul>
+                    <li class="list-index"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column left-bar-pretend">
+            <div class="left-category-container-pretend">
+
+            </div>
+        </div>
+        <div class="column right-bar">
+            <div class="right-category-book-container">
+                <header>
+                    <h6 class="linkToCreate">
+                        <a href="{% url 'app:sample_new'%}" class="a-create">
+                            本追加
+                        </a>
+                    </h6>
+                    <h1 style="color: #afafb0;">
+                        <a href="{% url 'app:sample' %}" class="service-name">Venevolenze</a>
+                    </h1>
+                </header>
+                <hr color="#6c272d" />
+                <section class="each-book-wrapper">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <a class="a-title">
+                                        本のタイトル
+                                    </a>
+                                </td>
+                                <td class="book-category">
+                                    <cite class="b-c-box">
+                                        <a class="a-category">
+                                            カテゴリー
+                                        </a>
+                                    </cite>
+                                </td>
+                                <td class="consideration4">
+                                    <a>
+                                        本の内容、自分で考えたことをここに書くことができます。<br>
+                                        今回はサンプルなので省略します。
+                                        また本の内容を忘れたときに大事な部分だけを見直すことができます。
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <a class="a-title">
+                                        本のタイトル
+                                    </a>
+                                </td>
+                                <td class="book-category">
+                                    <cite class="b-c-box">
+                                        <a class="a-category">
+                                            カテゴリー
+                                        </a>
+                                    </cite>
+                                </td>
+                                <td class="consideration4">
+                                    <a>
+                                        本の内容、自分で考えたことをここに書くことができます。<br>
+                                        今回はサンプルなので省略します。
+                                        また本の内容を忘れたときに大事な部分だけを見直すことができます。
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <a class="a-title">
+                                        本のタイトル
+                                    </a>
+                                </td>
+                                <td class="book-category">
+                                    <cite class="b-c-box">
+                                        <a class="a-category">
+                                            カテゴリー
+                                        </a>
+                                    </cite>
+                                </td>
+                                <td class="consideration4">
+                                    <a>
+                                        本の内容、自分で考えたことをここに書くことができます。<br>
+                                        今回はサンプルなので省略します。
+                                        また本の内容を忘れたときに大事な部分だけを見直すことができます。
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                            <tr>
+                                <td>
+                                    <p class="sample-to-signup"><a href="{% url 'app:signup' %}">新規登録画面に戻る</a></p>
+                                </td>
+                            </tr>
+                        </table>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

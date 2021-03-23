@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>本について</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/consideration.css' %}">
+</head>
+
+<body>
+    <div class="consideration-wrapper">
+        <div class="column left-bar">
+            <div class="left-category-container">
+                <ul>
+                    <li class="list-index">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="column left-bar-pretend">
+            <div class="left-category-container-pretend">
+
+            </div>
+        </div>
+        <div class="column right-consideration">
+            <div class="right-category-container">
+                <header>
+                    <h3 class="box-a-back">
+                        <a href="{% url 'app:index' %}" class="a-back-to-index">＜</a>
+                    </h3>
+                </header>
+                {% if request.user == book.user %}
+                <section class="each-book-consideration-wrapper">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <h3>{{ book.title }}</h3>
+                            </td>
+                            <td class="title-backspace"></td>
+                            <td class="book">
+                                <h1 class="book-title">{{ book.title }}</h1>
+                                <hr class="book-title-hr" color="#6c272d" />
+
+                                {% if book.quote1 %}
+                                    <blockquote>
+                                        <p class="p-quotes">
+                                            <span class="double-quot">“</span>
+                                            <br>
+                                                {{ book.quote1 }}
+                                            <br>
+                                        </p>
+                                    </blockquote>
+                                {% endif %}
+
+                                {% if book.consideration1 %}
+                                    <p class="p-considerations">{{ book.consideration1 }}</p>
+                                    <hr class="book-title-hr" color="#6c272d" />
+                                {% endif %}
+
+                                {% if book.quote2 %}
+                                    <blockquote>
+                                        <p class="p-quotes">
+                                            <span class="double-quot">“</span>
+                                            <br>
+                                                {{ book.quote2 }}
+                                        </p>
+                                    </blockquote>
+                                {% endif %}
+
+                                {% if book.consideration2 %}
+                                    <p class="p-considerations">{{ book.consideration2 }}</p>
+                                    <hr class="book-title-hr" color="#6c272d" />
+                                {% endif %}
+
+                                {% if book.quote3 %}
+                                    <blockquote>
+                                        <p class="p-quotes">
+                                            <span class="double-quot">“</span>
+                                            <br>
+                                            {{ book.quote3 }}
+                                        </p>
+                                    </blockquote>
+                                {% endif %}
+
+                                {% if book.consideration3 %}
+                                    <p class="p-considerations">{{ book.consideration3 }}</p>
+                                    <hr class="book-title-hr" color="#6c272d" />
+                                {% endif %}
+
+                                <p class="p-considerations">{{ book.consideration4 }}</p>
+                                <hr class="last-book-title-hr" color="#6c272d" />
+                                <br>
+                                <div class="category-datetime">
+                                    <span class="span-category">
+                                        {{ book.category }}
+                                    </span><br>
+                                    <p class="p-created_datetime">{{ book.created_at }}</p>
+
+                                    {% if updated_at %}
+                                    {{ book.updated_at }}
+                                    {% endif %}
+                                </div>
+                                <br>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                {% else %}
+                    <p>あなたはログインしてません</p>
+                {% endif %}
+
+                <div class="button-container">
+                    <div class="book-edit-and-delete">
+                        {% if request.user == book.user %}
+                            <a href="{% url 'app:edit' book.id %}"><button class="btn-edit">編集</button></a>
+                            <form action="{% url 'app:delete' book.pk %}" method="post">{% csrf_token %}
+                                <button class="btn-delete" type="submit" onclick='return confirm("本当に削除しますか");'>
+                                    削除
+                                </button>
+                            </form>
+                        {% else %}
+                            <!-- <a href="{% url 'app:login' %}"><button class="btn-edit">編集</button></a>
+                            <form action="{% url 'app:login' %}" method="post">{% csrf_token %}
+                                <button class="btn-delete" type="submit" onclick='return confirm("本当に削除しますか");'>
+                                    削除
+                                </button>
+                            </form> -->
+                        {% endif %}
+                    </div>
+                    <div class="div-a-to-index">
+                        <a href="{% url 'app:index' %}" class="a-to-index">トップページ戻る</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

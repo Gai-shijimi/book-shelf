@@ -1,0 +1,604 @@
+/* ################################ スマートフォン ######################################## */
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    h1 {
+        vertical-align: center;
+    }
+
+    h3.box-a-back {
+        padding-top: 2%;
+    }
+
+    h3 a.a-back-to-index {
+        text-decoration: none;
+        background: rgba(217,217,217,0.4);
+        border-radius: 9%;
+        color: dimgray;
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 0.3%;
+        box-shadow: 2px 2px 1px;
+    }
+
+
+    /* 左のバー */
+    div.consideration-wrapper {
+        display: flex;
+    }
+    div.column {
+        height: 100vh;
+    }
+    div.left-bar {
+        width: 15.6%;
+        z-index: 20;
+        background-image: linear-gradient(90deg, #000000 94%, #f5f5f5 94%);
+        background-size: 25% 80%;
+        position: fixed;
+        color: white;
+        border-right: 5px solid #005c42;
+    }
+
+    /* ここに左のスペースのバーをとる */
+    div.left-bar-pretend {
+        width: 15%;
+    }
+    /* ここまで */
+
+    div.left-category-container {
+        height: 100vh;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    /* 右のバー */
+    div.right-consideration {
+        width: 90%;
+    }
+    div.right-category-container {
+        height: 100vh;
+        padding: 0 4%;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+
+    .each-book-consideration-wrapper {
+        margin-top: 4.6%;
+    }
+
+    .each-book-consideration-wrapper .title {
+        display: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 3%;
+        position: fixed;
+        z-index: 2;
+        margin-top: 1.4%;
+        background: linear-gradient(-135deg, #17184b, #19448e, #17184b,
+        #17184b, #19448e, #17184b);
+        box-shadow: 0 0 11px inset black;
+        color: white;
+        text-align: center;
+        align-items: center;
+    }
+
+    .each-book-consideration-wrapper td.title h3 {
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: lighter;
+    }
+
+    .each-book-consideration-wrapper td {
+        vertical-align: top;
+    }
+
+    .title-backspace {
+        display: none;
+        width: 200px;
+        height: 200px;
+    }
+
+    .each-book-consideration-wrapper .book {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin-top: -0.5%;
+    }
+
+    .book-title {
+        margin-bottom: 1%;
+        font-size: 19px;
+        background: linear-gradient(-135deg, #17184b, #19448e, #17184b,
+        #17184b, #19448e, #17184b);
+        color: white;
+        padding: 2%;
+        border-radius: 3%;
+        text-align: center;
+    }
+
+    .book-title-hr {
+        margin-bottom: 5%;
+    }
+
+    .last-book-title-hr {
+        margin-top: 3%;
+    }
+
+    .span-category {
+        font-weight: 400;
+        font-size: 14px;
+        color: dimgray;
+        margin-bottom: 1%;
+        border-top: 1px solid #c9c9c2;
+        border-left: 1px solid #c9c9c2;
+        border-bottom: 1px solid #19448e;
+        border-right: 1px solid #19448e;
+        padding: 1.5%;
+        border-radius: 10%;
+    }
+
+    .category-datetime {
+        float:right;
+        width: 100%;
+        text-align: right;
+    }
+
+    .p-created_datetime {
+        margin-top: 3%;
+    }
+
+    /* ここからボタンのエリア*/
+    .button-container {
+        margin-top: 2.9%;
+        margin-right: 1.5%;
+        margin-bottom: 4%;
+        text-align: right;
+    }
+
+    .a-to-index {
+        text-decoration: none;
+        color: orangered;
+    }
+
+    .div-a-to-index {
+        margin-top: 1.4%;
+    }
+
+    .btn-edit {
+        background-color: white;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border-radius: 10%;
+    }
+
+    .btn-delete {
+        background-color: white;
+        border-radius: 10%;
+    }
+
+    .p-quotes {
+        padding: 1% 1% 1.5% 2.8%;
+        font-size: 12px;
+        background: rgba(235,235,235,0.5);
+        border-radius: 1%;
+    }
+
+    .double-quot {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .p-considerations {
+        padding: 5% 3%;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ################################### タブレットPC ######################################## */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    h1 {
+        vertical-align: center;
+    }
+
+    h3.box-a-back {
+        padding-top: 2%;
+    }
+
+    h3 a.a-back-to-index {
+        text-decoration: none;
+        background: rgba(217,217,217,0.4);
+        border-radius: 9%;
+        color: dimgray;
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 0.3%;
+        box-shadow: 2px 2px 1px;
+    }
+
+
+    /* 左のバー */
+    div.consideration-wrapper {
+        display: flex;
+    }
+    div.column {
+        height: 100vh;
+    }
+    div.left-bar {
+        width: 10%;
+        z-index: 20;
+        background-image: linear-gradient(90deg, #000000 94%, #f5f5f5 94%);
+        background-size: 25% 80%;
+        position: fixed;
+        color: white;
+        border-right: 5px solid #005c42;
+    }
+
+    /* ここに左のスペースのバーをとる */
+    div.left-bar-pretend {
+        width: 15%;
+    }
+    /* ここまで */
+
+    div.left-category-container {
+        height: 100vh;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    /* 右のバー */
+    div.right-consideration {
+        width: 85%;
+    }
+    div.right-category-container {
+        height: 100vh;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+
+    .each-book-consideration-wrapper {
+        margin-top: 4.6%;
+    }
+
+    .title {
+        width: 150px;
+        height: 150px;
+        border-radius: 3%;
+        position: fixed;
+        z-index: 2;
+        margin-top: 1.4%;
+        background: linear-gradient(-135deg, #17184b, #19448e, #17184b,
+        #17184b, #19448e, #17184b);
+        box-shadow: 0 0 11px inset black;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .each-book-consideration-wrapper td.title h3 {
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: lighter;
+    }
+
+    .each-book-consideration-wrapper td {
+        vertical-align: top;
+    }
+
+    .title-backspace {
+        width: 150px;
+        height: 150px;
+    }
+
+    .each-book-consideration-wrapper .book {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin: -0.5% 9% 0 9%;
+    }
+
+    .book-title {
+        margin-bottom: 1%;
+    }
+
+    .book-title-hr {
+        margin-bottom: 3%;
+    }
+
+    .last-book-title-hr {
+        margin-top: 3%;
+    }
+
+    .double-quot {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .p-considerations {
+        padding: 5% 3%;
+    }
+
+    .button-container {
+        margin-top: 2.9%;
+        margin-right: 7.4%;
+        margin-bottom: 4%;
+        text-align: right;
+    }
+
+    .span-category {
+        font-weight: 400;
+        font-size: 14px;
+        color: dimgray;
+        border-top: 1px solid #c9c9c2;
+        border-left: 1px solid #c9c9c2;
+        border-bottom: 1px solid #19448e;
+        border-right: 1px solid #19448e;
+        padding: 1.5%;
+        border-radius: 10%;
+    }
+
+    .category-datetime {
+        float:right;
+        width: 100%;
+        text-align: right;
+    }
+
+    .p-created_datetime {
+        margin-top: 3%;
+    }
+
+
+    /* ここからボタンのエリア*/
+    .a-to-index {
+        text-decoration: none;
+        color: orangered;
+    }
+
+    .div-a-to-index {
+        margin-top: 1.4%;
+    }
+
+    .btn-edit {
+        background-color: white;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border-radius: 10%;
+    }
+
+    .btn-delete {
+        background-color: white;
+        border-radius: 10%;
+    }
+
+    .p-quotes {
+        padding: 0.5% 1% 1.5% 1.8%;
+        font-size: 15px;
+        background: rgba(235,235,235,0.5);
+        border-radius: 1%;
+    }
+
+
+}
+
+
+
+/* ############################## PC ########################################## */
+@media screen and (min-width: 992px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    h1 {
+        vertical-align: center;
+    }
+
+    h3.box-a-back {
+        padding-top: 2%;
+    }
+
+    h3 a.a-back-to-index {
+        text-decoration: none;
+        background: rgba(217,217,217,0.4);
+        border-radius: 9%;
+        color: dimgray;
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 0.3%;
+        box-shadow: 2px 2px 1px;
+    }
+
+
+    /* 左のバー */
+    div.consideration-wrapper {
+        display: flex;
+    }
+    div.column {
+        height: 100vh;
+    }
+    div.left-bar {
+        width: 10%;
+        z-index: 20;
+        background-image: linear-gradient(90deg, #000000 94%, #f5f5f5 94%);
+        background-size: 25% 80%;
+        position: fixed;
+        color: white;
+        border-right: 5px solid #005c42;
+    }
+
+    /* ここに左のスペースのバーをとる */
+    div.left-bar-pretend {
+        width: 15%;
+    }
+    /* ここまで */
+
+    div.left-category-container {
+        height: 100vh;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    /* 右のバー */
+    div.right-consideration {
+        width: 79%;
+    }
+    div.right-category-container {
+        height: 100vh;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+
+    .each-book-consideration-wrapper {
+        margin-top: 4.6%;
+    }
+
+    .each-book-consideration-wrapper .title {
+        width: 200px;
+        height: 200px;
+        border-radius: 3%;
+        position: fixed;
+        z-index: 2;
+        margin-top: 1.4%;
+        background: linear-gradient(-135deg, #17184b, #19448e, #17184b,
+        #17184b, #19448e, #17184b);
+        box-shadow: 0 0 11px inset black;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .each-book-consideration-wrapper td.title h3 {
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: lighter;
+    }
+
+    .each-book-consideration-wrapper td {
+        vertical-align: top;
+    }
+
+    .title-backspace {
+        width: 200px;
+        height: 200px;
+    }
+
+    .each-book-consideration-wrapper .book {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin: -0.5% 9% 0 9%;
+    }
+
+    .book-title {
+        margin-bottom: 1%;
+    }
+
+    .book-title-hr {
+        margin-bottom: 3%;
+    }
+
+    .last-book-title-hr {
+        margin-top: 3%;
+    }
+
+    .button-container {
+        margin-top: 2.9%;
+        margin-right: 7%;
+        margin-bottom: 4%;
+        text-align: right;
+    }
+
+    .span-category {
+        font-weight: 400;
+        font-size: 14px;
+        color: dimgray;
+        border-top: 1px solid #c9c9c2;
+        border-left: 1px solid #c9c9c2;
+        border-bottom: 1px solid #19448e;
+        border-right: 1px solid #19448e;
+        padding: 1.5%;
+        border-radius: 10%;
+    }
+
+    .p-created_datetime {
+        margin-top: 3%;
+    }
+
+    .category-datetime {
+        float:right;
+        width: 100%;
+        text-align: right;
+    }
+
+    .p-quotes {
+        padding: 0.5% 1% 1.5% 1.8%;
+        font-size: 15px;
+        background: rgba(235,235,235,0.5);
+        border-radius: 1%;
+    }
+
+    .p-considerations {
+        padding: 5% 1.5%;
+    }
+
+    .double-quot {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    /* ここからボタンのエリア*/
+    .a-to-index {
+        text-decoration: none;
+        color: orangered;
+    }
+
+    .div-a-to-index {
+        margin-top: 1.4%;
+    }
+
+    .btn-edit {
+        background-color: white;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border-radius: 10%;
+    }
+
+    .btn-delete {
+        background-color: white;
+        border-radius: 10%;
+    }
+
+
+}
+
+

@@ -1,0 +1,450 @@
+/* ########### スマホ ################################################ */
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+
+    }
+
+    a {
+        text-decoration: none;
+        color: orangered;
+    }
+
+    header {
+        background: linear-gradient(black 0%, black 60%, dimgray 100%);
+    }
+
+    .container {
+        line-height: 16vh;
+        height: 14vh;
+    }
+
+    .container h1 {
+        margin-left: 6.8%;
+    }
+
+    div.wrapper {
+        display: flex;
+        background: rgba(220, 220, 220, 0.3);
+    }
+
+    div.column {
+        height: 85vh;
+    }
+    div.left {
+        display: none;
+        width: 59%;
+    }
+    div.right {
+        width: 90%;
+        border-left: 2px solid lightgray;
+    }
+
+    .explanation {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .to-sample {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .to-sample a {
+        color: dimgray;
+        border: 1px solid dimgray;
+        padding: 1%;
+    }
+
+    div.right-container {
+        margin-top: 7.8%;
+        padding-left: 10%;
+    }
+
+    .label-email {
+        margin-top: 4%;
+    }
+
+    .label-email label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .label-email input {
+        width: 96%;
+        height: 30px;
+    }
+
+    .label-password {
+        margin-top: 4%;
+    }
+
+    .label-password label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .label-password input {
+        width: 96%;
+        height: 30px;
+    }
+
+    input.login {
+        margin-top: 8%;
+    }
+
+    .a-signup {
+        font-size: 15px;
+        padding-top: 4%;
+    }
+
+    .span-only-you {
+        color: #005c42;
+    }
+
+    .to-sample-for-smartphone {
+        border: 1px solid #afafb0;
+        color: #afafb0;
+        margin-top: 3.9%;
+        margin-bottom: 4%;
+        width: 94%;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .to-sample-for-smartphone a {
+        color: #afafb0;
+    }
+
+    /* signup.html */
+    .signup-label-email {
+        margin-top: 4%;
+    }
+
+    .signup-label-email label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .signup-label-email input {
+        width: 95%;
+        height: 30px;
+    }
+
+    .signup-label-password {
+        margin-top: 1%;
+    }
+
+    .signup-label-password label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .signup-label-password input {
+        width: 95%;
+        height: 30px;
+    }
+
+    .a-login {
+        margin-top: 5%;
+        color: orangered;
+        padding-top: 2%;
+    }
+}
+
+/* ######## タブレットPC ###################################################### */
+@media screen and (min-width: 768px) and (max-width: 1026px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+
+    }
+
+    a {
+        text-decoration: none;
+        color: orangered;
+    }
+
+    header {
+        background: linear-gradient(black 0%, black 60%, dimgray 100%);
+    }
+
+    .container {
+        line-height: 16vh;
+        height: 14vh;
+    }
+
+    .container h1 {
+        margin-left: 6.8%;
+        font-size: 44px;
+    }
+
+    div.wrapper {
+        display: flex;
+        background: rgba(220, 220, 220, 0.3);
+    }
+
+    div.column {
+        height: 85vh;
+    }
+    div.left {
+        width: 59%;
+    }
+    div.right {
+        width: 41%;
+        border-left: 2px solid lightgray;
+    }
+
+    .explanation {
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+
+    .to-sample {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .to-sample a {
+        color: dimgray;
+        border: 1px solid dimgray;
+        padding: 1%;
+    }
+
+    div.right-container {
+        margin-top: 16%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .label-email {
+        margin-top: 7%;
+    }
+
+    .label-email label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .label-email input {
+        width: 95%;
+        height: 30px;
+    }
+
+    .label-password {
+        margin-top: 4%;
+    }
+
+    .label-password label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .label-password input {
+        width: 95%;
+        height: 30px;
+    }
+
+    input.login {
+        margin-top: 8%;
+    }
+
+    .a-signup {
+        font-size: 15px;
+        padding-top: 4%;
+    }
+
+    .span-only-you {
+        color: #005c42;
+    }
+
+    /* signup.html */
+    .signup-label-email {
+        margin-top: 10%;
+    }
+
+    .signup-label-email label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .signup-label-email input {
+        width: 95%;
+        height: 30px;
+    }
+
+    .signup-label-password {
+        margin-top: 3%;
+    }
+
+    .signup-label-password label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .signup-label-password input {
+        width: 95%;
+        height: 30px;
+    }
+
+    .a-login {
+        color: orangered;
+        padding-top: 2%;
+    }
+
+    .to-sample-for-smartphone {
+        display: none;
+    }
+}
+
+/* ################ PC ######################################################## */
+
+@media screen and (min-width: 1027px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+
+    }
+
+    a {
+        text-decoration: none;
+        color: orangered;
+    }
+
+    header {
+        background: linear-gradient(black 0%, black 60%, dimgray 100%);
+    }
+
+    .container {
+        line-height: 16vh;
+        height: 14vh;
+    }
+
+    .container h1 {
+        margin-left: 5.8%;
+    }
+
+    div.wrapper {
+        display: flex;
+        background: rgba(220, 220, 220, 0.3);
+    }
+
+    div.column {
+        height: 85vh;
+    }
+    div.left {
+        width: 59%;
+    }
+    div.right {
+        width: 41%;
+        border-left: 2px solid lightgray;
+    }
+
+    .explanation {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .to-sample {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .to-sample a {
+        color: dimgray;
+        border: 1px solid dimgray;
+        padding: 1%;
+    }
+
+    div.right-container {
+        margin-top: 7.8%;
+        padding-left: 10%;
+    }
+
+    .label-email {
+        margin-top: 4%;
+    }
+
+    .label-email label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .label-email input {
+        width: 60%;
+        height: 30px;
+    }
+
+    .label-password {
+        margin-top: 4%;
+    }
+
+    .label-password label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .label-password input {
+        width: 60%;
+        height: 30px;
+    }
+
+    input.login {
+        margin-top: 8%;
+    }
+
+    .a-signup {
+        font-size: 15px;
+        padding-top: 4%;
+    }
+
+    .span-only-you {
+        color: #005c42;
+    }
+
+    /* signup.html */
+    .signup-label-email {
+        margin-top: 4%;
+    }
+
+    .signup-label-email label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .signup-label-email input {
+        width: 60%;
+        height: 30px;
+    }
+
+    .signup-label-password {
+        margin-top: 1%;
+    }
+
+    .signup-label-password label {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .signup-label-password input {
+        width: 60%;
+        height: 30px;
+    }
+
+    .a-login {
+        color: orangered;
+        padding-top: 2%;
+    }
+
+    .to-sample-for-smartphone {
+        display: none;
+    }
+}
+

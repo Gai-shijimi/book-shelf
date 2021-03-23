@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+}
+
+body {
+
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ################################# スマートフォン ###################################### */
+@media screen and (max-width: 767px) {
+    /* 左のバー(欄) */
+    div.wrapper {
+        display: flex;
+    }
+    div.column {
+        height: 100vh;
+    }
+    div.left-bar {
+        width: 10%;
+        position: fixed;
+        z-index: 20;
+        background-image: linear-gradient(90deg, #000000 94%, #f5f5f5 94%);
+        background-size: 25% 80%;
+        color: white;
+        border-right: 5px solid #005c42;
+    }
+
+    /* 左のバーのスペースをとる */
+    div.left-bar-pretend {
+        width: 15%;
+        background: white;
+    }
+    /* ここまで */
+
+    div.left-category-container {
+        height: 100vh;
+        margin-top: 10%;
+    }
+
+    li.list-index {
+        border-collapse: separate;
+        border-spacing: 2px 13px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+
+    /* 右のバー */
+    div.right-bar {
+        width: 79%;
+        display: flex;
+    }
+
+    .header-thinking {
+        padding-top: 2%;
+    }
+
+    /* 右の左側 */
+    div.rightBar-left {
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* スペースをとる */
+    .rightBar-left-pretend {
+        width: 55%;
+    }
+
+    .form-width {
+        width: 100%;
+    }
+
+    .form-title {
+        margin-top: 5%;
+
+    }
+
+    .form-quote1 {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .form-consideration1 {
+        margin-top: 1.45%;
+    }
+
+    .tips-container-for-smartphone {
+        height: 210px;
+        width: 95%;
+        padding: 2.75%;
+        overflow: scroll;
+        border: 1px solid #17184b;
+    }
+
+    .form-quote2 {
+        margin-top: 7%;
+    }
+
+    .form-consideration2 {
+        margin-top: 1.45%;
+    }
+
+    .form-quote3 {
+        margin-top: 7%;
+    }
+
+    .form-consideration3 {
+        margin-top: 1.45%;
+    }
+
+    .form-consideration4 {
+        margin-top: 9%;
+    }
+
+    .form-category {
+        margin-top: 5%;
+    }
+
+    .btn-save {
+        margin-top: 4.5%;
+    }
+
+    .a-to-index {
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+
+    select {
+        height: 2em;
+    }
+
+    /* 右の右側のスペース*/
+    .rightBar-right {
+        display: none;
+        position: fixed;
+        height: 17%;
+        z-index: 20;
+        width: 80%;
+        top: 45%;
+        left: 15%;
+        overflow: scroll;
+        border: solid 1px #17184b;
+        border-radius: 0.5%;
+        background-color: whitesmoke;
+    }
+
+    .tips {
+        margin-top: 4.1%;
+        padding: 1% 3%;
+    }
+
+    .textarea-sample {
+        width: 99.4%;
+    }
+
+}
+
+
+/* ################################# タブレットPC ###################################### */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    /* 左のバー(欄) */
+    div.wrapper {
+        display: flex;
+    }
+    div.column {
+        height: 100vh;
+    }
+    div.left-bar {
+        width: 10%;
+        position: fixed;
+        z-index: 20;
+        background-image: linear-gradient(90deg, #000000 94%, #f5f5f5 94%);
+        background-size: 25% 80%;
+        color: white;
+        border-right: 5px solid #005c42;
+    }
+
+    /* 左のバーのスペースをとる */
+    div.left-bar-pretend {
+        width: 21%;
+        background: white;
+    }
+    /* ここまで */
+
+    div.left-category-container {
+        height: 100vh;
+        margin-top: 10%;
+    }
+
+    li.list-index {
+        border-collapse: separate;
+        border-spacing: 2px 13px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+
+    /* 右のバー */
+    .right-bar {
+        width: 100%;
+    }
+
+    .header-thinking {
+        padding-top: 2%;
+    }
+
+    .right-bar-column {
+        height: 80vh;
+    }
+
+    /* 右の左側 */
+    .right-bar {
+        width: 80%;
+    }
+
+    div.rightBar-left {
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* スペースをとる */
+    .rightBar-left-pretend {
+        width: 55%;
+    }
+
+    .form-new-book {
+        width: 94%;
+    }
+
+    .form-width {
+        width: 94%;
+    }
+
+    .tips-container-for-smartphone {
+        height: 180px;
+        width: 88.7%;
+        margin-top: 1.5%;
+        padding: 2.75%;
+        overflow: scroll;
+        border: 1px solid #17184b;
+    }
+
+    .form-title {
+        margin-top: 5%;
+    }
+
+    .form-quote1 {
+        margin-top: 10%;
+    }
+
+    .form-consideration1 {
+        margin-top: 1.45%;
+    }
+
+    .form-quote2 {
+        margin-top: 7%;
+    }
+
+    .form-consideration2 {
+        margin-top: 1.45%;
+    }
+
+    .form-quote3 {
+        margin-top: 7%;
+    }
+
+    .form-consideration3 {
+        margin-top: 1.45%;
+    }
+
+    .form-consideration4 {
+        margin-top: 9%;
+    }
+
+    .form-category {
+        margin-top: 5%;
+    }
+
+    .btn-save {
+        margin-top: 4.5%;
+    }
+
+    .a-to-index {
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+
+    select {
+        height: 2em;
+    }
+
+    /* 右の右側のスペース*/
+    .rightBar-right {
+        display: none;
+        position: fixed;
+        height: 35.5%;
+        z-index: 20;
+        width: 35%;
+        top: 11.7%;
+        left: 57.3%;
+        overflow: scroll;
+        border: solid 1px #17184b;
+        border-radius: 0.5%;
+    }
+
+    .tips {
+        margin-top: 4.1%;
+        padding: 1% 3%;
+    }
+
+    .textarea-sample {
+        width: 94%;
+    }
+
+}
+
+
+/* ################################# PC ############################################### */
+@media screen and (min-width: 1026px) {
+    /* 左のバー(欄) */
+    div.wrapper {
+        display: flex;
+    }
+    div.column {
+        height: 100vh;
+    }
+    div.left-bar {
+        width: 10%;
+        position: fixed;
+        z-index: 20;
+        background-image: linear-gradient(90deg, #000000 94%, #f5f5f5 94%);
+        background-size: 25% 80%;
+        color: white;
+        border-right: 5px solid #005c42;
+    }
+
+    /* 左のバーのスペースをとる */
+    div.left-bar-pretend {
+        width: 15%;
+        background: white;
+    }
+    /* ここまで */
+
+    div.left-category-container {
+        height: 100vh;
+        margin-top: 10%;
+    }
+
+    li.list-index {
+        border-collapse: separate;
+        border-spacing: 2px 13px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+
+    /* 右のバー */
+    div.right-bar {
+        width: 79%;
+        display: flex;
+    }
+
+    .header-thinking {
+        padding-top: 2%;
+    }
+
+    .right-bar-column {
+        height: 80vh;
+    }
+
+    /* 右の左側 */
+    div.rightBar-left {
+        height: 100vh;
+        width: 50%;
+        margin: 0;
+    }
+
+    /* スペースをとる */
+    .rightBar-left-pretend {
+        width: 55%;
+    }
+
+    .tips-container-for-smartphone {
+        display: none;
+    }
+
+    .form-title {
+        margin-top: 5%;
+    }
+
+    .form-quote1 {
+        margin-top: 10%;
+    }
+
+    .form-consideration1 {
+        margin-top: 1.45%;
+    }
+
+    .form-quote2 {
+        margin-top: 7%;
+    }
+
+    .form-consideration2 {
+        margin-top: 1.45%;
+    }
+
+    .form-quote3 {
+        margin-top: 7%;
+    }
+
+    .form-consideration3 {
+        margin-top: 1.45%;
+    }
+
+    .form-consideration4 {
+        margin-top: 9%;
+    }
+
+    .form-category {
+        margin-top: 5%;
+    }
+
+    .btn-save {
+        margin-top: 4.5%;
+    }
+
+    .a-to-index {
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+
+    select {
+        height: 2em;
+    }
+
+    /* 右の右側のスペース*/
+    .rightBar-right {
+        position: fixed;
+        height: 39.5%;
+        z-index: 20;
+        width: 31%;
+        top: 25.5%;
+        left: 53.3%;
+        overflow: scroll;
+        border: solid 1px #17184b;
+        border-radius: 0.5%;
+    }
+
+    .tips {
+        margin-top: 4.1%;
+        padding: 1% 3%;
+    }
+
+}

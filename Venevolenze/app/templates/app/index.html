@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>マイブック</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="column left-bar">
+            <div class="left-category-container">
+                <ul>
+                    <li class="list-index"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column left-bar-pretend">
+            <div class="left-category-container-pretend">
+
+            </div>
+        </div>
+
+        <div class="column right-bar">
+            <div class="right-category-book-container">
+                <header>
+                    <h6 class="linkToCreate">
+                        <div class="header-menu">
+                            {% if request.user.is_authenticated %}
+                            <!-- ここにあとで[お気に入りの文]を追加 -->
+                            <a href="{% url 'app:logout' %}" class="a-logout">ログアウト</a> /
+                            {% endif %}
+                            <a href="{% url 'app:new_book_consider'%}" class="a-create">
+                                本追加
+                            </a>
+                        </div>
+                    </h6>
+                    <h1 style="color: #afafb0;">
+                        {% if request.user.is_authenticated %}
+                            <a href="{% url 'app:index' %}" class="service-name">Venevolenze</a>
+                        {% else %}
+                            <a href="{% url 'app:login' %}" class="service-name">Venevolenze</a>
+                        {% endif %}
+                    </h1>
+                </header>
+                <hr color="#6c272d" />
+                    {% for message in messages %}
+                    <p class="message-{{ message.tags }}">{{ message }}</p>
+                    {% endfor %}
+
+
+                    <section class="each-book-wrapper">
+                        <p>{{user}}</p>
+                        {% if request.user.is_authenticated %}
+                            {% for book in books %}
+                                <table>
+                                    <tr>
+                                        <td class="title">
+                                            <a href="{% url 'app:consideration' book_id=book.id %}" class="a-title">
+                                                {{ book.title }}
+                                            </a>
+                                        </td>
+                                        <td class="book-category">
+                                            <cite class="b-c-box">
+                                                <a href="{% url 'app:books_category' category=book.category %}" class="a-category">{{ book.category }}</a>
+                                            </cite>
+                                        </td>
+                                        <td class="consideration4">
+                                            <a href="{% url 'app:consideration' book_id=book.id %}">
+                                                {{ book.consideration4 }}
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            {% endfor %}
+                        {% else %}
+                            <p>あなたはログインしていません</p>
+                        {% endif %}
+                    </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

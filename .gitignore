@@ -1,0 +1,14 @@
+.idea
+venv/
+bin/
+include/
+lib/
+db.sqlite3
+manage.py/
+Pipfile/
+
+__pycache__/
+__init__.py
+secret_settings.py
+
+migrations/

@@ -1,0 +1,69 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {% load static %}
+    <title>Venevolenze</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        {% if request.user.is_authenticated %}
+            <h1><a href="{% url 'app:index' %}">Venevolenze</a></h1>
+        {% else %}
+            <h1><a href="{% url 'app:login' %}">Venevolenze</a></h1>
+        {% endif %}
+
+    </div>
+</header>
+<div class="wrapper">
+    <div class="column left">
+        <h1 class="explanation">
+            <span class="span-only-you">本の内容を整理するのに</span> <br>
+            <br>
+            使ってみてください<br>
+        </h1>
+        <p class="to-sample"><a href="{% url 'app:sample' %}">サンプルをみる</a></p>
+    </div>
+    <div class="column right">
+        <div class="right-container">
+
+            <form class="form-sign" method="post">{% csrf_token %}
+                {% if form.errors %}
+                    <p>メールアドレスかパスワードが間違っています。</p>
+                {% endif %}
+
+                <h2>ログイン</h2>
+                <div class="label-email">
+                    <label>メールアドレス</label>
+                    <br>
+                    <input name="username" required>
+                </div>
+                <div class="label-password">
+                    <label>パスワード</label>
+                    <br>
+                    <input name="password" required>
+                </div>
+                <input type="submit" value="ログイン" class="login">
+            </form>
+
+            <!-- {% if request.user.is_authenticated is not True %}
+            <div  class="a-signup">
+                <a href="{% url 'app:signup' %}">新規登録はこちら</a>
+            </div>
+            {% endif %} -->
+
+            <div  class="a-signup">
+                <a href="{% url 'app:signup' %}">新規登録はこちら</a>
+            </div>
+
+
+            <p class="to-sample-for-smartphone"><a href="{% url 'app:sample' %}">トップページと本追加ページをみる</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>本の追加</title>
+    {% load static %}
+    {% load widget_tweaks %}
+    <link rel="stylesheet" href="{% static 'css/new_book_consider.css' %}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="column left-bar">
+            <div class="left-category-container">
+                <ul>
+                    <li class="list-index"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column left-bar-pretend">
+            <div class="left-category-container-pretend">
+
+            </div>
+        </div>
+        <div class="column right-bar">
+                <div class="right-bar-column rightBar-left">
+                    <div>
+                        <div>
+                            <table class="form-new-book">
+                                <tr>
+                                    <td>
+                                        <div class="form-title">タイトル</div>
+                                        <cite><input type="text" ></cite>
+
+                                        <div class="form-quote1">興味を持った内容１</div>
+                                        <blockquote class="form-quote">
+                                            <textarea cols="57" rows="5" class="textarea-sample"></textarea>
+                                        </blockquote>
+                                        <div class="form-consideration1">上記について考えたこと１</div>
+                                        <p><textarea cols="57" rows="10" class="textarea-sample"></textarea></p>
+
+                                        <div class="tips-container-for-smartphone">
+                                            <p>＜人物について＞</p>
+                                            <p>
+                                                ・一番心に響いたことは何でしたか？<br>
+                                                ・この人のここを見習い、自分の弱点を直そう
+                                                　という部分はありましたか？<br>
+                                                ・感動した、心に残った部分はどこでしたか？<br>
+                                                ・新しい発見、驚いたことはありましたか？
+                                            </p>
+                                            <br>
+                                            <hr>
+                                            <br>
+                                            <p>＜要約の仕方＞</p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+
+                                        <div class="form-quote2">興味を持った内容２</div>
+                                        <blockquote class="form-quote">
+                                            <textarea cols="57" rows="5" class="textarea-sample"></textarea>
+                                        </blockquote>
+                                        <div class="form-consideration2">上記について考えたこと２</div>
+                                        <p><textarea cols="57" rows="10" class="textarea-sample"></textarea></p>
+
+                                        <div class="tips-container-for-smartphone">
+                                            <p>＜人物について＞</p>
+                                            <p>
+                                                ・一番心に響いたことは何でしたか？<br>
+                                                ・この人のここを見習い、自分の弱点を直そう
+                                                　という部分はありましたか？<br>
+                                                ・感動した、心に残った部分はどこでしたか？<br>
+                                                ・新しい発見、驚いたことはありましたか？
+                                            </p>
+                                            <br>
+                                            <hr>
+                                            <br>
+                                            <p>＜要約の仕方＞</p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+
+                                        <div class="form-quote3">興味を持った内容３</div>
+                                        <blockquote class="form-quote" >
+                                            <textarea cols="57" rows="5" class="textarea-sample"></textarea>
+                                        </blockquote>
+                                        <div class="form-consideration3">上記について考えたこと３</div>
+                                        <p><textarea cols="57" rows="10" class="textarea-sample"></textarea></p>
+
+                                        <div class="tips-container-for-smartphone">
+                                            <p>＜人物について＞</p>
+                                            <p>
+                                                ・一番心に響いたことは何でしたか？<br>
+                                                ・この人のここを見習い、自分の弱点を直そう
+                                                　という部分はありましたか？<br>
+                                                ・感動した、心に残った部分はどこでしたか？<br>
+                                                ・新しい発見、驚いたことはありましたか？
+                                            </p>
+                                            <br>
+                                            <hr>
+                                            <br>
+                                            <p>＜要約の仕方＞</p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+
+                                        <div class="form-consideration4">この本についてのまとめ</div>
+                                        <p><textarea cols="57" rows="10" class="textarea-sample"></textarea></p>
+
+                                        <div class="form-category">本のカテゴリー</div>
+                                        <p><input type="text"></p>
+
+                                        <button class="btn-save">保存</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="a-to-index">
+                                <a href="{% url 'app:sample' %}" style="color: orangered">サンプルのトップに戻る</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-bar-column rightBar-right">
+                    <div class="table-parent">
+                        <table class="rightBar-right-table">
+                            <tr>
+                                <td class="tips-td">
+                                    <div class="tips">
+                                        <div class="tips-container">
+                                            <p>＜人物について＞</p>
+                                            <p>
+                                                ・一番心に響いたことは何でしたか？<br>
+                                                ・この人のここを見習い、自分の弱点を直そう
+                                                　という部分はありましたか？<br>
+                                                ・感動した、心に残った部分はどこでしたか？<br>
+                                                ・新しい発見、驚いたことはありましたか？
+                                            </p>
+                                            <br>
+                                            <hr>
+                                            <br>
+                                            <p>＜要約の仕方＞</p>
+                                            <p>
+                                              
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>

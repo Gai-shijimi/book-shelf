@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {% load static %}
+    <title>Venevolenze</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <h1><a href="{% url 'app:index' %}">Venevolenze</a></h1>
+    </div>
+</header>
+<div class="wrapper">
+    <div class="column left">
+        <h1 class="explanation">
+            <span class="span-only-you">本の内容を整理するのに</span> <br>
+            <br>
+            使ってみてください<br>
+        </h1>
+        <p class="to-sample"><a href="{% url 'app:sample' %}">サンプルをみる</a></p>
+    </div>
+    <div class="column right">
+        <div class="right-container">
+            {% for message in messages %}
+                <p class="message-{{ message.tags }}">{{ message }}</p>
+            {% endfor %}
+            <h2>ユーザー登録</h2>
+            <form method="post" action="{% url 'app:signup' %}">{% csrf_token %}
+                <div class="signup-label-email">
+                    <label>メールアドレス</label>
+                    <br>
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                </div>
+                <br>
+                <div class="signup-label-password">
+                    <label>パスワード</label>
+                    <br>
+                    {{ form.password1 }}
+                    {{ form.password1.errors }}
+                </div>
+                <br>
+                <div class="signup-label-password">
+                    <label>パスワード(確認)</label>
+                    <br>
+                    {{ form.password2 }}
+                    {{ form.password2.errors }}
+                </div>
+                <br>
+                <input type="submit" value="登録する">
+            </form>
+
+            <div  class="a-login">
+                <a href="{% url 'app:login' %}">ログインはこちら</a>
+            </div>
+
+            <p class="to-sample-for-smartphone"><a href="{% url 'app:sample' %}">Venevolenzeのサンプルをみる</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
